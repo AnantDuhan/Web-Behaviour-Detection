@@ -1,0 +1,27 @@
+{
+  "name": "web-behaviour-detection",
+  "version": "0.1.0",
+  "description": "Using sentiment analysis to reduce bad news visibility.",
+  "scripts": {
+    "prebuild": "rm -rf dist .cache",
+    "start": "parcel watch src/background.js src/popup.html src/content-script.js --no-hmr",
+    "build": "parcel build src/background.js src/popup.html src/content-script.js && cd dist && zip -9 -rFS ../web-behavoiur-detection.zip * && cd -"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.4.3",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "sentiment": "^5.0.2",
+    "vader-sentiment": "^1.1.3"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "main": "index.js"
+}
