@@ -24,7 +24,7 @@
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "browser_specific_settings": {
     "gecko": {
-      "id": "negativitybalancer@artdgn.github.com"
+      "id": "negativitybalancer@anantduhan.github.com"
     }
   }
 }
