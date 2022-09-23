@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Web Positiviser",
-  "version": "0.1.9",
+  "name": "Web Behaviour Detection",
+  "version": "0.0.1",
   "description": "Make your web more positive by using sentiment analysis to reduce negative content visibility.",
   "browser_action": {
     "default_icon": "images/icon.png",
-    "default_title": "Web Positiviser",
+    "default_title": "Web Behaviour Detection",
     "default_popup": "popup.html"
   },
   "icons": {"128": "images/icon.png" },
@@ -24,7 +24,7 @@
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "browser_specific_settings": {
     "gecko": {
-      "id": "negativitybalancer@anantduhan.github.com"
+      "id": "webbehaviordetection@anantduhan.github.com"
     }
   }
 }

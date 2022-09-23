@@ -1,6 +1,6 @@
 ![CI](https://github.com/anantduhan/web-behaviour-detection/workflows/CI/badge.svg) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/anantduhan/web-behaviour-detection?label=dockerhub&logo=docker)
 
-# Web Positiviser:
+# Web Behaviour Detection:
 Use sentiment analysis to reduce negative content visibility to make your web more positive.
 
 ## What does this do?

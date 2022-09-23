@@ -1,5 +1,5 @@
 # extension folder
 
 /extension/node_modules
-/extension/dist
-/extension/.cache
+# /extension/dist
+# /extension/.cache
