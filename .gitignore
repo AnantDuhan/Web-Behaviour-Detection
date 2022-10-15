@@ -3,3 +3,4 @@
 /extension/node_modules
 /extension/dist
 /extension/.cache
+.venv

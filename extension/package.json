@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.4.3",
