@@ -131,10 +131,10 @@ export class PythonBackendNegativity extends BackendBase {
     } catch (error) {
       console.log(error);
       if (!document.hidden) {  // only do this for active tab
-        const instructionsLocation = 
-          'https://github.com/anantduhan/web-behaviour-detection/python-backend.md';
+        const instructionsLocation =
+          'https://github.com/AnantDuhan/Web-Behaviour-Detection/blob/main/python-backend.md';
         const confirmPrompt = (
-            'Web-Positiviser extension: local backend call failed.\n\n' + 
+            'Web-Behaviour-Detection extension: local backend call failed.\n\n' + 
             'Please switch to another scoring option, ' + 
             'or ensure that a local scoring service is running.' + 
             '\n\nPress "Cancel" to do nothing, or "OK" to open instructions page in a new tab.'

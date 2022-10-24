@@ -4,3 +4,6 @@
 /extension/dist
 /extension/.cache
 .venv
+.vs
+.vscode
+out

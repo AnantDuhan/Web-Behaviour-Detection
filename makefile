@@ -1,12 +1,12 @@
-REPO_NAME=web-behaviour-detection
-VENV_ACTIVATE= .venv/Scripts/activate
-PYTHON= .venv/Scripts/python
+REPO_NAME=Web-Behaviour-Detection
+VENV_ACTIVATE=
+PYTHON=.venv/Scripts/python
 DOCKER_TAG=anantduhan/web-behaviour-detection
 PORT=8000
-REPO_NAME=web-behaviour-detection
+# REPO_NAME=web-behaviour-detection
 
 .venv:
-	python3 -m venv .venv
+	python -m venv .venv
 
 requirements: .venv
 	$(VENV_ACTIVATE); 
@@ -14,8 +14,8 @@ requirements: .venv
 	pip install -U pip-tools; 
 	pip-compile requirements.in
 
-install: .venv
-	$(VENV_ACTIVATE); 
+install:
+	.venv/Scripts/activate;
 	pip install -r requirements.txt
 
 kill-server:
@@ -55,5 +55,5 @@ tests:
 zip-source-code:
 	git clone -l . ./temp
 	rm -rf ./temp/.git
-	cd ./temp && zip -9 -rFS ../web-positiviser-source.zip * && cd -
+	cd ./temp && zip -9 -rFS ../web-behaviour-detection-source.zip * && cd -
 	rm -rf ./temp/

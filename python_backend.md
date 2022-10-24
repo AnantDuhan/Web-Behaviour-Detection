@@ -13,8 +13,8 @@ being able to use docker, or being able to use local python.
 - ⏹️ To stop: just Ctrl+C in the terminal where you're running it.
 
 ### To run in detached and persistent mode (e.g. for ongoing usage):
-- ▶️ To start: `docker run -p 8000:8000 -dit --restart unless-stopped --name web-positiviser anantduhan/web-behaviour-detection`
-- ⏹️ To stop: `docker rm -f web-positiviser`.
+- ▶️ To start: `docker run -p 8000:8000 -dit --restart unless-stopped --name web-behaviour-detection anantduhan/web-behaviour-detection`
+- ⏹️ To stop: `docker rm -f web-behaviour-detection`.
 
 
 ## Option 2: 🐍 Local python option (e.g. for development)

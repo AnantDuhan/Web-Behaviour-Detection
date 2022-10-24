@@ -1,4 +1,4 @@
-![CI](https://github.com/anantduhan/web-behaviour-detection/workflows/CI/badge.svg) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/anantduhan/web-behaviour-detection?label=dockerhub&logo=docker)
+![CI](https://github.com/anantduhan/Web-Behaviour-Detection/workflows/CI/badge.svg) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/anantduhan/Web-Behaviour-Detection?label=dockerhub&logo=docker)
 
 # Web Behaviour Detection:
 Use sentiment analysis to reduce negative content visibility to make your web more positive.
@@ -29,7 +29,7 @@ A browser extension that finds negative elements on the page and makes them less
     Run in detached and persistent mode (e.g. for actual usage):
     - Start: `docker run -p 8000:8000 -dit --restart unless-stopped --name web-behaviour-detection anantduhan/web-behaviour-detection`
 
-    - Stop: `docker rm -f web-positiviser`.
+    - Stop: `docker rm -f web-behaviour-detection`.
 
 
     Local python (e.g. for development)
@@ -66,7 +66,7 @@ Firefox
     - Go to `about: config` and set `xpinstall.signatures.required` to False to be able to load a local extension.
     - Run `npm run-script build` to package the extensions into a zip file.
     - Go to `about:addons` -> "gear" icon -> "Install add-on from file.." -> 
-    Navigate to `/extension/` folder in this project -> choose `web-positiviser.zip`.
+    Navigate to `/extension/` folder in this project -> choose `web-behaviour-detection-.zip`.
     - To update (on code changes): repeat the previous two steps.
 - Docs: [Firefox docs](https://extensionworkshop.com/documentation/develop/testing-persistent-and-restart-features/)
 
