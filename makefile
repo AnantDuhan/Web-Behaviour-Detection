@@ -1,9 +1,8 @@
-REPO_NAME=Web-Behaviour-Detection
-VENV_ACTIVATE=
+REPO_NAME=web-behaviour-detection
+VENV_ACTIVATE=.venv/Scripts/activate
 PYTHON=.venv/Scripts/python
-DOCKER_TAG=anantduhan/web-behaviour-detection
+DOCKER_TAG=anantduhan/$(REPO_NAME)
 PORT=8000
-# REPO_NAME=web-behaviour-detection
 
 .venv:
 	python -m venv .venv
@@ -15,7 +14,7 @@ requirements: .venv
 	pip-compile requirements.in
 
 install:
-	.venv/Scripts/activate;
+	$(VENV_ACTIVATE);
 	pip install -r requirements.txt
 
 kill-server:

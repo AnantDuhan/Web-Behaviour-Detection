@@ -1,9 +1,51 @@
-# extension folder
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-/extension/node_modules
-/extension/dist
-/extension/.cache
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+extension/dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.idea
 .venv
-.vs
+.pytest_cache
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# dotenv
+.env
+
+# data
+data/*
+out/*
+
+# temp files
+*.*~
+
+# dependencies
+node_modules
+
+extension/.cache
 .vscode
-out
